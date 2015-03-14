@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="white">#fff</color>
+	
+	<color name="list_row_start_color">#ffffff</color>
+	<color name="list_row_end_color">#ffffff</color>
+
+	<color name="list_row_hover_start_color">#ff5</color>
+	<color name="list_row_hover_end_color">#ff5</color>
+</resources>

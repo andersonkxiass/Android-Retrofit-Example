@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	android:focusable="true"
+	android:background="@drawable/selector">
+
+	<LinearLayout
+		android:id="@+id/user_item"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="4dp"
+		android:minHeight="?android:attr/listPreferredItemHeight"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/txt_user_name"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="2dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Title"
+			android:textColor="#000" />
+
+		<TextView
+			android:id="@+id/txt_user_id"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			android:textColor="#000" />
+
+		<TextView
+			android:id="@+id/txt_date_created"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="2dp"
+			android:gravity="start"
+			android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+			android:textColor="#000" />
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="?android:attr/selectableItemBackground" />
+</FrameLayout>
