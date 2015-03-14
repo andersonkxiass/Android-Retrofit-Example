@@ -9,7 +9,7 @@ import br.com.andersonacs.sample.retrofit.model.User;
 /**
  * Created by anderson.acs on 3/12/2015.
  */
-public class WrappeUser {
+public class WrapperUser {
 
     @SerializedName(value="results")
     List<User> results;

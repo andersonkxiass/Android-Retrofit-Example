@@ -43,4 +43,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.1.0'
 
     compile 'com.yqritc:recyclerview-flexibledivider:1.1.0'
+
+    compile 'io.realm:realm-android:0.80.0'
 }

@@ -1,7 +1,7 @@
 package br.com.andersonacs.sample.retrofit.restclient.service;
 
 import br.com.andersonacs.sample.retrofit.model.User;
-import br.com.andersonacs.sample.retrofit.restclient.wrapper.WrappeUser;
+import br.com.andersonacs.sample.retrofit.restclient.wrapper.WrapperUser;
 import retrofit.Callback;
 import retrofit.http.Body;
 import retrofit.http.GET;
@@ -16,7 +16,7 @@ import retrofit.mime.TypedInput;
 public interface ParseUserService {
 
     @GET("/users")
-    public void listUsers(Callback<WrappeUser> response);
+    public void listUsers(Callback<WrapperUser> response);
 
     @POST("/users")
     public String signUp(@Body User user);

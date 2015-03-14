@@ -1,29 +1,23 @@
-package br.com.andersonacs.sample.retrofit;
+package br.com.andersonacs.sample.retrofit.activities;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
 import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 
-import java.io.UnsupportedEncodingException;
-
+import br.com.andersonacs.sample.retrofit.R;
 import br.com.andersonacs.sample.retrofit.adapter.UserAdapter;
-import br.com.andersonacs.sample.retrofit.model.User;
 import br.com.andersonacs.sample.retrofit.restclient.RestClient;
 import br.com.andersonacs.sample.retrofit.restclient.service.ParseUserService;
-import br.com.andersonacs.sample.retrofit.restclient.wrapper.WrappeUser;
+import br.com.andersonacs.sample.retrofit.restclient.wrapper.WrapperUser;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
-import retrofit.mime.TypedByteArray;
-import retrofit.mime.TypedInput;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -61,11 +55,10 @@ public class MainActivity extends ActionBarActivity {
          * List Users OK
          */
 
-
-        service.listUsers(new Callback<WrappeUser>() {
+        service.listUsers(new Callback<WrapperUser>() {
 
             @Override
-            public void success(WrappeUser users, Response response) {
+            public void success(WrapperUser users, Response response) {
 
                 UserAdapter userAdapter = new UserAdapter(users.getResults());
                 recList.setAdapter(userAdapter);
@@ -76,6 +69,4 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
-
-
 }
